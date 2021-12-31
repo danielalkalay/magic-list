@@ -24,13 +24,13 @@ function App() {
   //   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(items));
   // }, [items]);
 
-  // add first commit
+  // did it, i'm starting to understand
+
   return (
     <Router>
       <div className="App">
         <Header />
         <Navbar />
-
         <MainScreen />
         <Footer />
       </div>
