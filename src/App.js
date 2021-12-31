@@ -30,7 +30,7 @@ function App() {
       <div className="App">
         <Header />
         <Navbar />
-       
+
         <MainScreen />
         <Footer />
       </div>
