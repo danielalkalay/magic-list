@@ -24,11 +24,7 @@ const Navbar = () => {
           <i className="far fa-check-square"></i>
         </li>
       </Link>
-      <Link to="/">
-        <li className="btn f1 yellow">
-          <i className="far fa-check-square"></i>
-        </li>
-      </Link>
+
     </ul>
   );
 };
