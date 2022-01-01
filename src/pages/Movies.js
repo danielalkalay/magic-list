@@ -22,7 +22,6 @@ const Movies = () => {
   return (
     <div className="page">
       <h1 className="list-header">Movies</h1>
-      <h1 className="list-header">or not?</h1>
       <AddBox
         items={items}
         setItems={setItems}
