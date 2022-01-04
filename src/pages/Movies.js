@@ -4,32 +4,32 @@ import CardList from "../components/CardList";
 import Footer from "../components/Footer";
 import Scroll from "../Scroll";
 
-const LOCAL_STORAGE_KEY = "magic-listApp.items";
+const LOCAL_STORAGE_KEY2 = "magic-listApp.movies";
 
 const Movies = () => {
   const [inputText, setInputText] = useState("");
-  const [items, setItems] = useState([]);
+  const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    const storedItems = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
-    if (storedItems) setItems(storedItems);
+    const storedMovies = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY2));
+    if (storedMovies) setMovies(storedMovies);
   }, []);
 
   useEffect(() => {
-    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(items));
-  }, [items]);
+    localStorage.setItem(LOCAL_STORAGE_KEY2, JSON.stringify(movies));
+  }, [movies]);
 
   return (
     <div className="page">
       <h1 className="list-header">Movies</h1>
       <AddBox
-        items={items}
-        setItems={setItems}
+        items={movies}
+        setItems={setMovies}
         inputText={inputText}
         setInputText={setInputText}
       />
       <Scroll>
-        <CardList items={items} setItems={setItems} />
+        <CardList items={movies} setItems={setMovies} />
       </Scroll>
       <Footer />
     </div>

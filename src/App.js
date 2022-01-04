@@ -9,29 +9,17 @@ import {
   BrowserRouter as Router,
   // , Switch, Link, Route
 } from "react-router-dom";
+import Home from "./pages/Home";
 // const LOCAL_STORAGE_KEY = "magic-listApp.items";
 
 function App() {
-  // const [inputText, setInputText] = useState("");
-  // const [items, setItems] = useState([]);
-
-  // useEffect(() => {
-  //   const storedItems = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
-  //   if (storedItems) setItems(storedItems);
-  // }, []);
-
-  // useEffect(() => {
-  //   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(items));
-  // }, [items]);
-
-  // did it, i'm starting to understand
-
   return (
     <Router>
       <div className="App">
         <Header />
         <Navbar />
-        <MainScreen />
+        <MainScreen></MainScreen>
+        <Home />
         <Footer />
       </div>
     </Router>

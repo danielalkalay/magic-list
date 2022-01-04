@@ -4,32 +4,32 @@ import CardList from "../components/CardList";
 import Footer from "../components/Footer";
 import Scroll from "../Scroll";
 
-const LOCAL_STORAGE_KEY = "magic-listApp.items";
+const LOCAL_STORAGE_KEY1 = "magic-listApp.todos";
 
 const Todo = () => {
   const [inputText, setInputText] = useState("");
-  const [items, setItems] = useState([]);
+  const [todos, setTodos] = useState([]);
 
   useEffect(() => {
-    const storedItems = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
-    if (storedItems) setItems(storedItems);
+    const storedTodos = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY1));
+    if (storedTodos) setTodos(storedTodos);
   }, []);
 
   useEffect(() => {
-    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(items));
-  }, [items]);
+    localStorage.setItem(LOCAL_STORAGE_KEY1, JSON.stringify(todos));
+  }, [todos]);
 
   return (
     <div className="page">
       <h1 className="list-header">Todo</h1>
       <AddBox
-        items={items}
-        setItems={setItems}
+        items={todos}
+        setItems={setTodos}
         inputText={inputText}
         setInputText={setInputText}
       />
       <Scroll>
-        <CardList items={items} setItems={setItems} />
+        <CardList items={todos} setItems={setTodos} />
       </Scroll>
       <Footer />
     </div>

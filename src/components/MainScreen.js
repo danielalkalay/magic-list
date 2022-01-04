@@ -9,21 +9,18 @@ import Todo from "../pages/Todo";
 const MainScreen = () => {
   return (
     <Switch>
-      <Route exact path="/home">
-        <Home />
-      </Route>
       <Route exact path="/movies">
         <Movies />
       </Route>
-      <Route exact path="/music">
+      {/* <Route exact path="/music">
         <Music />
-      </Route>
+      </Route> */}
       <Route exact path="/todo">
         <Todo />
       </Route>
-      <Route exact path="/Sport">
+      {/* <Route exact path="/Sport">
         <Sport />
-      </Route>
+      </Route> */}
     </Switch>
   );
 };
