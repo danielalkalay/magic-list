@@ -1,24 +1,14 @@
 {
   "files": {
-    "main.css": "/magic-list/static/css/main.a00ca1f6.chunk.css",
-    "main.js": "/magic-list/static/js/main.e679eec0.chunk.js",
-    "main.js.map": "/magic-list/static/js/main.e679eec0.chunk.js.map",
-    "runtime-main.js": "/magic-list/static/js/runtime-main.f2cf9713.js",
-    "runtime-main.js.map": "/magic-list/static/js/runtime-main.f2cf9713.js.map",
-    "static/css/2.6d7c7915.chunk.css": "/magic-list/static/css/2.6d7c7915.chunk.css",
-    "static/js/2.083d4a4b.chunk.js": "/magic-list/static/js/2.083d4a4b.chunk.js",
-    "static/js/2.083d4a4b.chunk.js.map": "/magic-list/static/js/2.083d4a4b.chunk.js.map",
+    "main.css": "/magic-list/static/css/main.d0906fc9.css",
+    "main.js": "/magic-list/static/js/main.71a7a043.js",
+    "static/media/SEGA.woff": "/magic-list/static/media/SEGA.47b4bfa94ef243af4a5b.woff",
     "index.html": "/magic-list/index.html",
-    "static/css/2.6d7c7915.chunk.css.map": "/magic-list/static/css/2.6d7c7915.chunk.css.map",
-    "static/css/main.a00ca1f6.chunk.css.map": "/magic-list/static/css/main.a00ca1f6.chunk.css.map",
-    "static/js/2.083d4a4b.chunk.js.LICENSE.txt": "/magic-list/static/js/2.083d4a4b.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/magic-list/static/media/SEGA.47b4bfa9.woff"
+    "main.d0906fc9.css.map": "/magic-list/static/css/main.d0906fc9.css.map",
+    "main.71a7a043.js.map": "/magic-list/static/js/main.71a7a043.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.f2cf9713.js",
-    "static/css/2.6d7c7915.chunk.css",
-    "static/js/2.083d4a4b.chunk.js",
-    "static/css/main.a00ca1f6.chunk.css",
-    "static/js/main.e679eec0.chunk.js"
+    "static/css/main.d0906fc9.css",
+    "static/js/main.71a7a043.js"
   ]
 }
