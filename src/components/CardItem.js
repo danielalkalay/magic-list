@@ -16,35 +16,21 @@ const CardItem = ({ text, item, setItems, items, id }) => {
     );
   };
 
-  // const markerHandler = () => {
-  //   setList(
-  //     list.map((item) => {
-  //       if (item.id === listItem.id) {
-  //         return {
-  //           ...item,
-  //           completed: !listItem.completed,
-  //         };
-  //       }
-  //       return item;
-  //     })
-  //   );
-  // };
-
   const deleteHandler = () => {
     setItems(items.filter((el) => el.id !== item.id));
     console.log(items);
   };
 
-  // const listItemHandler = () => {
-  //   setList(list.filter((el) => el.id !== listItem.id));
-  //   console.log(listItem);
-  // };
-
   return (
-    <div className={`card-item ba  f3 yellow ${item.completed ? "green" : ""}`}>
+    <div
+      className={`card-item   f3 yellow ${item.completed ? "completed" : ""}`}
+    >
       <li className="item-name ">{text}</li>
       <div className="item-btn-box">
-        <button onClick={completeHandler} className="item-btn yellow">
+        <button
+          onClick={completeHandler}
+          className={`item-btn  ${item.completed ? "completed" : ""}`}
+        >
           <i className="far fa-check-circle"></i>
         </button>
         <button onClick={deleteHandler} className="item-btn yellow">

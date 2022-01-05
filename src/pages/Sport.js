@@ -3,33 +3,32 @@ import AddBox from "../components/AddBox";
 import CardList from "../components/CardList";
 import Footer from "../components/Footer";
 import Scroll from "../Scroll";
-const LOCAL_STORAGE_KEY = "magic-listApp.items";
+const LOCAL_STORAGE_KEY3 = "magic-listApp.sports";
 
 const Sport = () => {
   const [inputText, setInputText] = useState("");
-  const [items, setItems] = useState([]);
+  const [sports, setSports] = useState([]);
 
   useEffect(() => {
-    const storedItems = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
-    if (storedItems) setItems(storedItems);
+    const storedSports = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY3));
+    if (storedSports) setSports(storedSports);
   }, []);
 
   useEffect(() => {
-    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(items));
-  }, [items]);
+    localStorage.setItem(LOCAL_STORAGE_KEY3, JSON.stringify(sports));
+  }, [sports]);
   return (
     <div className="page">
       <h1 className="list-header">Sport</h1>
       <AddBox
-        items={items}
-        setItems={setItems}
+        items={sports}
+        setItems={setSports}
         inputText={inputText}
         setInputText={setInputText}
       />
       <Scroll>
-        <CardList setItems={setItems} items={items} />
+        <CardList setItems={setSports} items={sports} />
       </Scroll>
-      <Footer />
     </div>
   );
 };

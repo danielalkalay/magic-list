@@ -1,35 +1,34 @@
 import React, { useEffect, useState } from "react";
 import AddBox from "../components/AddBox";
 import CardList from "../components/CardList";
-import Footer from "../components/Footer";
 import Scroll from "../Scroll";
-const LOCAL_STORAGE_KEY = "magic-listApp.items";
+
+const LOCAL_STORAGE_KEY3 = "magic-listApp.music";
 
 const Music = () => {
   const [inputText, setInputText] = useState("");
-  const [items, setItems] = useState([]);
+  const [music, setMusic] = useState([]);
 
   useEffect(() => {
-    const storedItems = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
-    if (storedItems) setItems(storedItems);
+    const storedMovies = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY3));
+    if (storedMovies) setMusic(storedMovies);
   }, []);
 
   useEffect(() => {
-    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(items));
-  }, [items]);
+    localStorage.setItem(LOCAL_STORAGE_KEY3, JSON.stringify(music));
+  }, [music]);
   return (
     <div className="page">
       <h1 className="list-header">Music</h1>
       <AddBox
-        items={items}
-        setItems={setItems}
+        items={music}
+        setItems={setMusic}
         inputText={inputText}
         setInputText={setInputText}
       />
       <Scroll>
-        <CardList items={items} setItems={setItems} />
+        <CardList items={music} setItems={setMusic} />
       </Scroll>
-      <Footer />
     </div>
   );
 };

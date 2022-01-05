@@ -5,26 +5,25 @@ const Navbar = () => {
   return (
     <ul className="main-nav">
       <Link to="/music">
-        <li className="music btn f1 yellow">
+        <li className="music btn  yellow">
           <i className="fas fa-music"></i>
         </li>
       </Link>
       <Link to="/sport">
-        <li className="btn f1 yellow">
+        <li className="btn  yellow">
           <i className="fas fa-volleyball-ball"></i>
         </li>
       </Link>
       <Link to="/movies">
-        <li className="btn f1 yellow">
+        <li className="btn  yellow">
           <i className="fas fa-film"></i>
         </li>
       </Link>
       <Link to="/todo">
-        <li className="btn f1 yellow">
+        <li className="btn yellow">
           <i className="far fa-check-square"></i>
         </li>
       </Link>
-
     </ul>
   );
 };

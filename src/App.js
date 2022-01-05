@@ -5,12 +5,8 @@ import Header from "./components/Header";
 import MainScreen from "./components/MainScreen";
 import Navbar from "./components/Navbar";
 import "tachyons";
-import {
-  BrowserRouter as Router,
-  // , Switch, Link, Route
-} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Home from "./pages/Home";
-// const LOCAL_STORAGE_KEY = "magic-listApp.items";
 
 function App() {
   return (
@@ -18,8 +14,8 @@ function App() {
       <div className="App">
         <Header />
         <Navbar />
-        <MainScreen></MainScreen>
-        <Home />
+
+        <MainScreen />
         <Footer />
       </div>
     </Router>

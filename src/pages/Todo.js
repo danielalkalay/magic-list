@@ -31,7 +31,6 @@ const Todo = () => {
       <Scroll>
         <CardList items={todos} setItems={setTodos} />
       </Scroll>
-      <Footer />
     </div>
   );
 };

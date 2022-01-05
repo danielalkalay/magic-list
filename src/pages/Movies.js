@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AddBox from "../components/AddBox";
 import CardList from "../components/CardList";
-import Footer from "../components/Footer";
 import Scroll from "../Scroll";
 
 const LOCAL_STORAGE_KEY2 = "magic-listApp.movies";
@@ -31,7 +30,6 @@ const Movies = () => {
       <Scroll>
         <CardList items={movies} setItems={setMovies} />
       </Scroll>
-      <Footer />
     </div>
   );
 };
