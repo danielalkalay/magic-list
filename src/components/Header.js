@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <Link to="/">
+    <Link to="/magic-list">
       <div className="main-header yellow ">magic-List</div>
     </Link>
   );

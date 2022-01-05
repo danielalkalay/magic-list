@@ -20,7 +20,7 @@ const Todo = () => {
   }, [todos]);
 
   return (
-    <div className="page">
+    <>
       <h1 className="list-header">Todo</h1>
       <AddBox
         items={todos}
@@ -31,7 +31,7 @@ const Todo = () => {
       <Scroll>
         <CardList items={todos} setItems={setTodos} />
       </Scroll>
-    </div>
+    </>
   );
 };
 

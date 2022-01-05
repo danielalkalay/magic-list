@@ -1,5 +1,7 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Navigate, Outlet } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
 import Movies from "../pages/Movies";
 import Music from "../pages/Music";
@@ -8,23 +10,16 @@ import Todo from "../pages/Todo";
 
 const MainScreen = () => {
   return (
-    <Switch>
-      <Route exact path="/">
-        <Home />
-      </Route>
-      <Route exact path="/movies">
-        <Movies />
-      </Route>
-      <Route exact path="/music">
-        <Music />
-      </Route>
-      <Route exact path="/todo">
-        <Todo />
-      </Route>
-      <Route exact path="/Sport">
-        <Sport />
-      </Route>
-    </Switch>
+    <div className="page">
+      <Routes>
+        <Route path="/magic-list" element={<Home />} />
+        {/* <Route index element={<Home />} /> */}
+        <Route path="todo" element={<Todo />} />
+        <Route path="music" element={<Music />} />
+        <Route path="sport" element={<Sport />} />
+        <Route path="movies" element={<Movies />} />
+      </Routes>
+    </div>
   );
 };
 

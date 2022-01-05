@@ -139,6 +139,7 @@ a {
   flex-direction: column;
   width: 100%;
   align-items: center;
+  padding-bottom: 20px;
 }
 .card-item {
   display: flex;

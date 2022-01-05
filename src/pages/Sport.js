@@ -18,7 +18,7 @@ const Sport = () => {
     localStorage.setItem(LOCAL_STORAGE_KEY3, JSON.stringify(sports));
   }, [sports]);
   return (
-    <div className="page">
+    <>
       <h1 className="list-header">Sport</h1>
       <AddBox
         items={sports}
@@ -29,7 +29,7 @@ const Sport = () => {
       <Scroll>
         <CardList setItems={setSports} items={sports} />
       </Scroll>
-    </div>
+    </>
   );
 };
 

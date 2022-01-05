@@ -19,7 +19,7 @@ const Movies = () => {
   }, [movies]);
 
   return (
-    <div className="page">
+    <>
       <h1 className="list-header">Movies</h1>
       <AddBox
         items={movies}
@@ -30,7 +30,9 @@ const Movies = () => {
       <Scroll>
         <CardList items={movies} setItems={setMovies} />
       </Scroll>
-    </div>
+    </>
+    //     <div className="page">
+    // </div>
   );
 };
 
