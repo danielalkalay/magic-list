@@ -1,6 +1,4 @@
 import React from "react";
-import { Navigate, Outlet } from "react-router-dom";
-import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
 import Movies from "../pages/Movies";
@@ -13,7 +11,6 @@ const MainScreen = () => {
     <div className="page">
       <Routes>
         <Route path="/magic-list" element={<Home />} />
-        {/* <Route index element={<Home />} /> */}
         <Route path="todo" element={<Todo />} />
         <Route path="music" element={<Music />} />
         <Route path="sport" element={<Sport />} />
